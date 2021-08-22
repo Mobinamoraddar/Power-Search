@@ -14,3 +14,16 @@ window.addEventListener("click", function (event) {
     popUpMenu.style.display = "none";
   }
 });
+
+// SETTINGS WINDOW
+const settingsBtn = document.querySelector("#settings-click");
+const settingsWindow = document.querySelector("#settings-window");
+settingsBtn.addEventListener("click", showWindow);
+function showWindow() {
+  settingsWindow.style.display = "initial";
+}
+window.addEventListener("click", function (event) {
+  if (event.target != settingsWindow && event.target != settingsBtn) {
+    settingsWindow.style.display = "none";
+  }
+});

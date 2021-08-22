@@ -396,6 +396,36 @@ footer a:hover {
   min-height: 50px;
 }
 /* for hiding elements */
-.hidden {
+/* .hidden {
   display: none;
+} */
+
+/* --------------------SETTINGS WINDOW----------------- */
+#settings-window {
+  display: none;
+  right: 20px;
+  bottom: 48px;
+  position: absolute;
+}
+
+#settings-window ul {
+  list-style: none;
+  background: #fff;
+  border: 1px solid #70757a;
+  /* display: flex;
+  flex-direction: column; */
+}
+#settings-window li {
+  display: block;
+  padding: 14px 15px;
+  white-space: nowrap;
+}
+#settings-window ul li a {
+  font-size: 14px;
+  font-family: Roboto, arial, sans-serif;
+  color: #70757a;
+  text-decoration: none;
+}
+#settings-window ul li a:hover {
+  text-decoration: underline;
 }
