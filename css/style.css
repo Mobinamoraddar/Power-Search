@@ -221,6 +221,7 @@ footer a:hover {
   background-size: 64px 3100px;
   background-image: url("../images/g-apps-menu.png");
   background-repeat: no-repeat;
+  transform: scale(calc(5 / 6));
 }
 .icon-text {
   text-align: center;
