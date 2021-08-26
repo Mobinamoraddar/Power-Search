@@ -12,6 +12,8 @@ window.addEventListener("click", function (event) {
   //   console.log(event);
   if (event.target != popUpMenu && event.target != googleApps) {
     popUpMenu.style.display = "none";
+  } else {
+    popUpMenu.scrollTop = "0px";
   }
 });
 
