@@ -325,7 +325,10 @@ footer a:hover {
   white-space: normal;
   text-overflow: initial;
   word-wrap: break-word;
-  /* height: 106px; */
+  height: 46px;
+}
+.icon-arts:hover {
+  height: 95px;
 }
 .icon-arts a {
   background-position: 0 -1518px;
@@ -429,4 +432,9 @@ footer a:hover {
 }
 #settings-window ul li a:hover {
   text-decoration: underline;
+}
+
+/* status */
+#mic-status {
+  display: none;
 }

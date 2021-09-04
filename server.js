@@ -31,14 +31,14 @@ const server = http.createServer((req, res) => {
       break;
   }
 
-  //   if (contentType === "text/html" && extname === "") {
-  //     filePath += ".html";
-  //   }
+  if (contentType === "text/html" && extname === "") {
+    filePath += ".html";
+  }
 
   fs.readFile(filePath, (err, data) => {
     if (err) {
       if (err.code == "ENOENT") {
-        fs.readFile(path.join(__dirname, "public", "404.html"), (err, data) => {
+        fs.readFile(path.join(__dirname, "404.html"), (err, data) => {
           res.writeHead(404, { "Content-Type": "text/html" });
           res.end(data, "utf8");
         });
